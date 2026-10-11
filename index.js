@@ -3,7 +3,7 @@ const { HttpsProxyAgent } = require("https-proxy-agent");
 const fetch = require("node-fetch");
 
 const app = express();
-const PROXY = "http://1.20.101.18:80";
+const PROXY = "http://210.211.113.35:80";
 const agent = new HttpsProxyAgent(PROXY);
 
 app.get("/", async (req, res) => {
